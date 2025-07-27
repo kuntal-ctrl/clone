@@ -12,7 +12,7 @@ body {
 }
 
 .main {
-    background-image: url("assets/images/IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_medium.jpg");
+    background-image: url("IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_medium.jpg");
     background-position: center center;
     /* due to this if we move the website then all the content minimize from left and right side and gather at the centre  */
     background-size: max(1000px, 100vw);
