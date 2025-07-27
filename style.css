@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    /* to get the background more black we didi this  */
+}
+
+.main {
+    background-image: url("assets/images/IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_medium.jpg");
+    background-position: center center;
+    /* due to this if we move the website then all the content minimize from left and right side and gather at the centre  */
+    background-size: max(1000px, 100vw);
+    /* due to background dize the background became ajustable ass we move the screen size ,,and we increase the size of screen more than the sizeof background image the the image is zoom in */
+    background-repeat: no-repeat;
+    /* due to no repeat background the background image didi not move it remains in centre only  */
+    height: 70vh;
+    position: relative;
+    /* due to position relative the the nav bar did not appear outside the black box  */
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    /* due to position absoulute and top 0 the the nav bar did not appear outside the black box  */
+    background-color: black;
+}
+
+nav {
+    padding: 16px 0px;
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+    /* to increase the size of netflix logo which is there in nav bar  */
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+    /* due to position relative and z index 10 the word netflix comes out of the black background  */
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    /* to do same with the buttons  */
+
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* to bring the text in centre ehich is inside the class hero */
+    color: white;
+    position: relative;
+    /* position: relative;to pop out the content from the back background  */
+    gap: 8px;
+    padding: 30px;
+    /* applying this padding because when we watch in phone the the text should align at centre  */
+
+}
+
+/* to embed the as it is font in the website first embed whatfont website in the microsoft edge the go to the website selsct the font about which you want to learn the click on the icon which appear on the top of site the we known about the name of the font then go to google search google fonts and font name then click thw website of font selsct the font then click get font then go to import and copy the code of font which you wanted  */
+.hero> :nth-child(1) {
+
+    font-weight: 900;
+    font-size: 42px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+
+    font-weight: 900;
+    font-size: 42px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+
+    font-weight: 900;
+    font-size: 42px;
+    text-align: center;
+}
+
+
+.hero> :nth-child(4) {
+
+
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.hero>:nth-child(5) {
+
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* doing text align in centre because when we watch in phone then text will automatically goes in the next line so to get the text in the next line but in the centre  */
+
+
+/* the > symbol is for applaying the styles tto the imideated first child as that input and button became the first child and etc of the div so changeses applied to them also so for limited changes we introduced > this symbol   */
+
+.curve-section {
+    position: relative;
+    background-image: url('your-bg-image.jpg');
+    /* Optional */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.curve-line {
+    position: absolute;
+    bottom: 40px;
+    /* to move the curve upward we use bottom 4px */
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    opacity: 0.6;
+    height: ;
+}
+
+.curve-line svg {
+    display: block;
+    width: 100%;
+    height: 15px;
+    /* to decrease the height of curve  */
+}
+
+.content {
+    z-index: 2;
+}
+
+
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid rgba(249, 224, 224, 0.5);
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 9px 35px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main input {
+    padding: 10px 35px;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(249, 224, 224, 0.5);
+
+    /* to make the input email button transparent  */
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.secimg {
+    padding: 0px 32px;
+    display: flex;
+    /* makes items line up side by side horizontally  */
+    justify-content: center;
+    align-items: center;
+    /* do to this all the content gather at the centre  */
+    gap: 15px;
+    /* creats the space between the images  */
+    overflow-x: auto;
+    /* allows horizontal scroll if needed  */
+    scrollbar-width: none;
+    /* this scroll bar width none removes the scrollbars which appears on the scroll-timeline-name  */
+}
+
+.secimg img {
+    height: 300px;
+    border-radius: 8px;
+    transition: tramsform 0.3s ease;
+    /* Makes the animation smooth when something changes (like size). */
+
+    /* 0.3s means it takes 0.3 seconds to finish. */
+
+    /* ease means it starts slow, speeds up, then ends slow. */
+
+}
+
+.secimg img:hover {
+    transform: scale(1.05);
+    /* zoom the image when you hover over over an image scale(1.05) means image becomes 5% bigger  */
+    /* this transform make the image bigger ,transition makes that zoom smooth */
+}
+
+.content {
+    padding: 30px;
+    color: white;
+    font-size: 25px;
+}
+
+.content2 {
+    padding: 30px;
+    color: white;
+    font-size: 25px;
+}
+
+.reasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: linear-gradient(to right, #1f1f5c, #431845);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    flex: 1 1 200px;
+    max-width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    opacity: 0.9;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 70px;
+}
+
+
+.faq h2 {
+    padding: 58px;
+    font-size: 25px;
+    font-weight: 20;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+
+}
+
+.faqbox:hover {
+    background-color: rgb(39, 35, 35);
+
+    /* due to this when ever we go to this faqbox then the background colour changes to red  */
+
+}
+
+.faqbox svg {
+    filter: invert(1);
+    /* this we do to change the colour of plus sign  */
+}
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    /* due to justify content space btween the space is created between que and the plus sign  */
+    background-color: rgb(60, 58, 58);
+    cursor: pointer;
+    /* due to cursor pointer in faqbox whenever we go to this part a pointer ie hand will appear instead of a arrow  */
+
+    padding: 24px;
+    max-width: 79vw;
+    margin: auto;
+    color: white;
+    font-size: 24px;
+
+
+}
+
+footer {
+    color: white;
+    padding: 64px;
+
+
+}
+
+footer span {
+
+    margin: 2px;
+    max-width: 60vw;
+
+
+}
+
+footer .questions {
+    padding: 34px;
+
+}
+
+/* the bottom of the website is created using grid  */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* means 4 columns  */
+    color: white;
+    margin: auto;
+    justify-content: center;
+
+
+
+
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+
+
+
+}
+
+/* by . class is menstion and direct ehich is taken is the element ony of html  */
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    /* due to this the content is arrange in the column  */
+    gap: 22px;
+}
